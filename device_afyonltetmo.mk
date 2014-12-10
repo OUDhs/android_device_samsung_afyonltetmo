@@ -18,7 +18,7 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_KERNEL):kernel
 
 PRODUCT_COPY_FILES += \
-	device/samsung/afyonltetmo/rootdir/etc/twrp.fstab:recovery/root/etc/twrp.fstab
+    $(LOCAL_PATH)/rootdir/etc/twrp.fstab:root/etc/twrp.fstab
 
 $(call inherit-product, build/target/product/full.mk)
 
